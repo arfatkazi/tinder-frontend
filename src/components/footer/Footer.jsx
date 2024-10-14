@@ -1,7 +1,21 @@
+import "./Footer.css";
+
 const Footer = () => {
   return (
     <>
-      <div className="footer bg-black"></div>
+      <div className="footer ">
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+        <h1>footer</h1>
+      </div>
     </>
   );
 };

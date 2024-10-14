@@ -3,7 +3,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar text-white">
+      <div className="navbar text-white shadow-2xl">
         <img
           src="./public/tinder_img.png"
           alt="tinder-img-nav"
