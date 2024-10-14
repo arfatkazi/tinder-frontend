@@ -20,6 +20,7 @@
   font-weight: 600;
   margin-right: 2vw;
   margin-left: -1vw;
+  text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 1);
 }
 
 .nav-list {
@@ -34,11 +35,13 @@
 }
 .nav-list > li > a {
   transition: all 0.2s ease;
+  text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 1);
 }
 
 .nav-list > li > a:hover {
   text-decoration: underline;
-  color: #fa5151;
+  color: #fe1212;
+  cursor: pointer;
 }
 
 .right {
@@ -56,6 +59,7 @@
   cursor: pointer;
   padding: 0.2vw 1.5vw;
   cursor: pointer;
+  text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 1);
 }
 
 .right > h2:hover {
@@ -64,6 +68,7 @@
 }
 
 .right > button {
+  position: relative;
   font-size: 1.3vw;
   font-weight: 700;
   background-color: #ffff;
@@ -72,10 +77,16 @@
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  box-shadow: 0vw 0.2vw 0.1vw rgba(0, 0, 0, 1);
 }
 
 .right > button:hover {
-  background: red;
+  transition: all 0.3s ease-in-out;
   color: white;
+  background: rgb(255, 44, 123);
+  background: linear-gradient(
+    38deg,
+    rgba(255, 44, 123, 1) 53%,
+    rgba(255, 144, 52, 1) 86%
+  );
 }

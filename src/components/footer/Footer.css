@@ -1,10 +1,60 @@
 .footer {
   width: 100%;
-  max-height: 200vh;
   position: absolute;
   display: flex;
   top: 100vh;
-  background-color: orange;
+  background-color: rgb(12, 9, 28);
   color: #fff;
-  height: 150vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #010d1f;
+}
+
+.swipe-section {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6vw;
+}
+
+.cards {
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #626262;
+  margin-top: 2vw;
+  padding: 40px 30px;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #00132e;
+}
+
+.card-name {
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: -100px;
+}
+
+.card-name::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: gray;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.card-para {
+  margin-bottom: 20px;
 }
