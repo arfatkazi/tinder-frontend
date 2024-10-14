@@ -1,0 +1,73 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tinder-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-top: 0.3vw;
+}
+
+.navbar > h1 {
+  font-size: 2.85vw;
+  font-weight: 600;
+  margin-right: 2vw;
+  margin-left: -1vw;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-top: 0.8vh;
+  font-size: 1.4vw;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-right: 30vw;
+}
+.nav-list > li > a {
+  transition: all 0.2s ease;
+}
+
+.nav-list > li > a:hover {
+  text-decoration: underline;
+  color: #fa5151;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.right > h2 {
+  text-transform: capitalize;
+  font-size: 1.3vw;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.2vw 1.5vw;
+}
+
+.right > h2:hover {
+  cursor: pointer;
+  background: #ffffff3b;
+  border-radius: 20px;
+}
+
+.right > button {
+  font-size: 1.3vw;
+  font-weight: 700;
+  background-color: #ffff;
+  color: #000;
+  padding: 0.4vw 2.5vw;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}

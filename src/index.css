@@ -12,19 +12,12 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #fff;
 }
 
-.overlay {
-  background: #000;
-}
-
-.imgsection {
+#main {
   width: 100%;
   height: 100vh;
-  background-image: url("/public/tinderHero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -130px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 0.1fr 2fr 1fr;
 }
