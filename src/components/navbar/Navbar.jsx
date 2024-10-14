@@ -3,13 +3,13 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar text-white shadow-2xl">
+      <div className="navbar text-white ">
         <img
           src="./public/tinder_img.png"
           alt="tinder-img-nav"
           className="tinder-img"
         />
-        <h1>tinder</h1>
+        <h1 className="shadow-lg">tinder</h1>
         <ul className="nav-list">
           <li>
             <a>products</a>

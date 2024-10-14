@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1);
 }
 
 .hero-title {
@@ -22,6 +23,7 @@
 }
 
 .createbtn {
+  position: relative;
   background: rgb(255, 44, 123);
   background: linear-gradient(
     38deg,
@@ -32,7 +34,8 @@
   padding: 0.5vw 2vw;
   border-radius: 20px;
   font-size: 1.4vw;
-  margin-left: 40vw;
   font-weight: 700;
   margin-top: -5vw;
+  transform: translate(290%, -50%);
+  margin-top: 1vw;
 }
