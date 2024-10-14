@@ -50,13 +50,13 @@
   text-transform: capitalize;
   font-size: 1.3vw;
   font-weight: 700;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
   padding: 0.2vw 1.5vw;
+  cursor: pointer;
 }
 
 .right > h2:hover {
-  cursor: pointer;
   background: #ffffff3b;
   border-radius: 20px;
 }
@@ -70,4 +70,10 @@
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.right > button:hover {
+  background: red;
+  color: white;
 }
