@@ -1,6 +1,5 @@
 .herosection {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
 }
@@ -9,4 +8,31 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-title {
+  font-size: 2vw;
+  margin-top: -23vw;
+  font-size: 8vw;
+  transform: translate(10%, -50%);
+  color: #fff;
+  text-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  margin-bottom: -5vw;
+}
+
+.createbtn {
+  background: rgb(255, 44, 123);
+  background: linear-gradient(
+    38deg,
+    rgba(255, 44, 123, 1) 53%,
+    rgba(255, 144, 52, 1) 86%
+  );
+  color: #fff;
+  padding: 0.5vw 2vw;
+  border-radius: 20px;
+  font-size: 1.4vw;
+  margin-left: 40vw;
+  font-weight: 700;
+  margin-top: -5vw;
 }
