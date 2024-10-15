@@ -1,25 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
   const [isSafetyOpen, setIsSafetyOpen] = useState(false);
 
-  const mouseEnterHandler = () => {
-    setIsProductOpen(true);
+  const handleClickOutside = (event) => {
+    if (!event.target.closest(".product-list") && isProductOpen) {
+      setIsProductOpen(false);
+    }
+    if (!event.target.closest(".safety-list") && isSafetyOpen) {
+      setIsSafetyOpen(false);
+    }
   };
 
-  const mouseLeaveHandler = () => {
-    setIsProductOpen(false);
-  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isProductOpen, isSafetyOpen]);
 
-  const safetyHandler = () => {
-    setIsSafetyOpen(true);
-  };
-
-  const safetyleaveHandler = () => {
-    setIsSafetyOpen(false);
-  };
   return (
     <>
       <div className="navbar text-white ">
@@ -33,8 +34,8 @@ const Navbar = () => {
           <ul className="nav-list">
             <li
               className="product-list"
-              onMouseEnter={mouseEnterHandler}
-              onMouseLeave={mouseLeaveHandler}
+              onMouseEnter={() => setIsProductOpen(true)}
+              onMouseLeave={() => setIsProductOpen(false)}
             >
               <a className="products">products</a>
               {isProductOpen && (
@@ -65,8 +66,8 @@ const Navbar = () => {
             </li>
             <li
               className="safety-list"
-              onMouseEnter={safetyHandler}
-              onMouseLeave={safetyleaveHandler}
+              onMouseEnter={() => setIsSafetyOpen(true)}
+              onMouseLeave={() => setIsSafetyOpen(false)}
             >
               <a>safety</a>
               {isSafetyOpen && (
@@ -106,4 +107,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;
