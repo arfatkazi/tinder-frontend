@@ -58,15 +58,13 @@
 
 .dropdown {
   position: absolute !important;
-  top: 35px; /* Position it below the product-list */
+  top: 32px; /* Position it below the product-list */
   left: 0; /* Align to the left of the product-list */
-  background-color: rgba(0, 0, 0, 0.9); /* Darker background for contrast */
   padding: 10px;
   display: none; /* Hide by default */
   flex-direction: column;
   z-index: 1000;
   border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 .dropdown h5 {
@@ -78,8 +76,8 @@
   color: red; /* Change color on hover */
 }
 
-.dropdown:not(:nth-child(1n)) {
-  background-color: red;
+.safety-list > .dropdown {
+  margin-left: 14vw;
 }
 
 .right {
