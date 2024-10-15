@@ -34,7 +34,7 @@
   display: flex;
   align-items: self-start;
   gap: 0.1vw;
-  margin-top: 12.9vw;
+  margin-top: 0.5vw;
   font-size: 1.4vw;
   text-transform: capitalize;
   font-weight: 500;
@@ -53,9 +53,7 @@
 
 .nav-list > li > h5 > span:nth-last-child(1) {
   text-wrap: nowrap;
-  background-color: orange;
   margin-left: 0.5vw;
-  visibility: hidden;
 }
 
 .nav-list > li > a:nth-last-child(2n) {
@@ -63,15 +61,24 @@
   /* background-color: red; */
 }
 
+.dropdown {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10vw;
+}
+
+.dropdown > h5 > span:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .products {
   /* background-color: red; */
   margin-left: 2vw;
 }
 
-.support {
-  margin-right: 3.5vw;
-  margin-left: -2vw;
-}
 .right {
   display: flex;
   justify-content: space-between;
