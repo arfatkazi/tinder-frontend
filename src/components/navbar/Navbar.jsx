@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
@@ -103,6 +104,7 @@ const Navbar = () => {
           <h2>language</h2>
           <button>Log in</button>
         </div>
+        <HiOutlineMenuAlt3 className="burger-menu" />
       </div>
     </>
   );
