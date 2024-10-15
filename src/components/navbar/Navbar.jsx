@@ -4,29 +4,72 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar text-white ">
-        <img
-          src="./public/tinder_img.png"
-          alt="tinder-img-nav"
-          className="tinder-img"
-        />
-        <h1 className="shadow-lg">tinder</h1>
-        <ul className="nav-list">
-          <li>
-            <a>products</a>
-          </li>
-          <li>
-            <a>learn</a>
-          </li>
-          <li>
-            <a>safety</a>
-          </li>
-          <li>
-            <a>support</a>
-          </li>
-          <li>
-            <a>download</a>
-          </li>
-        </ul>
+        <div className="left">
+          <img
+            src="./public/tinder_img.png"
+            alt="tinder-img-nav"
+            className="tinder-img"
+          />
+          <h1>tinder</h1>
+          <ul className="nav-list">
+            <li className="product-list">
+              <a className="products">products</a>
+              <h5>
+                <span>premium features</span>
+              </h5>
+              <h5>
+                <span>subscription tiers</span>
+              </h5>
+
+              <h5>
+                <span>tinder gold</span>
+              </h5>
+
+              <h5>
+                <span>tinder platinum</span>
+              </h5>
+
+              <h5>
+                <span>tinder plus</span>
+              </h5>
+              <h5>
+                <span>tinder select</span>
+              </h5>
+            </li>
+            <li>
+              <a>learn</a>
+            </li>
+            <li>
+              <a>safety</a>
+
+              <h5>
+                <span>community guidelines</span>
+              </h5>
+              <h5>
+                <span>safety tips</span>
+              </h5>
+
+              <h5>
+                <span>safety and policies</span>
+              </h5>
+
+              <h5>
+                <span>safety and reporting</span>
+              </h5>
+
+              <h5>
+                <span>security</span>
+              </h5>
+            </li>
+            <li>
+              <a className="support">support</a>
+            </li>
+            <li>
+              <a className="download">download</a>
+            </li>
+          </ul>
+        </div>
+
         <div className="right">
           <h2>language</h2>
           <button>Log in</button>
