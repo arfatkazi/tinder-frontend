@@ -52,24 +52,19 @@
   cursor: pointer;
 }
 
-.product-list {
-  position: relative; /* Ensure this is relative for dropdown positioning */
-}
-
-.product-list:hover .dropdown {
-  display: flex; /* Show dropdown when hovering over product-list */
-  flex-direction: column;
+.dropdown {
+  display: inline-block;
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%; /* Position it below the product-list */
+  position: absolute !important;
+  top: 35px; /* Position it below the product-list */
   left: 0; /* Align to the left of the product-list */
   background-color: rgba(0, 0, 0, 0.9); /* Darker background for contrast */
   padding: 10px;
   display: none; /* Hide by default */
   flex-direction: column;
-  z-index: 10;
+  z-index: 1000;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
@@ -83,10 +78,15 @@
   color: red; /* Change color on hover */
 }
 
+.dropdown:not(:nth-child(1n)) {
+  background-color: red;
+}
+
 .right {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .right > h2 {
@@ -113,7 +113,7 @@
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0vw 0.2vw 0.1vw rgba(0, 0, 0, 1);
+  box-shadow: 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.5);
 }
 
 .right > button:hover {
