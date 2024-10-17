@@ -71,30 +71,27 @@
   position: absolute;
   left: 3%;
   top: 4%;
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.6839985994397759) 40%,
-    rgba(179, 179, 179, 0.499124649859944) 88%
+    rgba(0, 0, 0, 0.2) 100%,
+    rgba(179, 179, 179, 0.041) 1%
   );
-
   width: 4vw;
   height: 20vw;
   z-index: 999;
+  filter: blur(5px); /* Optional: enhances the blur effect */
 }
 
 .right-blur {
   position: absolute;
-  right: 0;
+  right: 3%;
   top: 4%;
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.6839985994397759) 40%,
-    rgba(179, 179, 179, 0.499124649859944) 88%
+    rgba(179, 179, 179, 0.041) 1% rgba(0, 0, 0, 0.2) 100%
   );
-
   width: 4vw;
   height: 20vw;
   z-index: 999;
+  filter: blur(5px); /* Optional: enhances the blur effect */
 }
