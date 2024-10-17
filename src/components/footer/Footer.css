@@ -31,7 +31,7 @@
   border-radius: 10px;
   width: 30vw;
   overflow: hidden;
-  animation: cardmove 2s ease-in-out 0s infinite forwards;
+  animation: cardmove 1.9s ease 0s infinite forwards;
 }
 
 #underline {
@@ -63,10 +63,38 @@
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 
 .left-blur {
-  background: linear-gradient();
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6839985994397759) 40%,
+    rgba(179, 179, 179, 0.499124649859944) 88%
+  );
+
+  width: 4vw;
+  height: 20vw;
+  z-index: 999;
+}
+
+.right-blur {
+  position: absolute;
+  right: 0;
+  top: 4%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6839985994397759) 40%,
+    rgba(179, 179, 179, 0.499124649859944) 88%
+  );
+
+  width: 4vw;
+  height: 20vw;
+  z-index: 999;
 }
