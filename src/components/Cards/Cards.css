@@ -31,7 +31,8 @@
   border-radius: 10px;
   width: 30vw;
   overflow: hidden;
-  animation: cardmove 1.9s ease 0s infinite forwards;
+  animation: cardmove 2.5s ease 0s infinite forwards;
+  margin-left: 1.4vw;
 }
 
 #underline {
