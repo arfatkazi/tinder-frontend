@@ -11,6 +11,7 @@ const Hero = () => {
 
         <h1 className="hero-title">Start something epic.</h1>
         <button className="createbtn">Create account</button>
+        <button className="createbtn login">Log in</button>
       </div>
     </>
   );

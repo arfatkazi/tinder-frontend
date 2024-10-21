@@ -63,3 +63,71 @@
   margin-left: 38vw;
   margin-top: 0.6vw;
 }
+
+@media screen and (max-width: 600px) {
+  #page-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 250%;
+    color: #fff;
+    border-top: 2px solid #262c33;
+  }
+  #page-5 > .sec-1 {
+    margin-top: 3vw;
+    margin-left: 6vw;
+  }
+
+  #page-5 > .sec-1 > h2 {
+    display: inline;
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-right: 3vw;
+  }
+
+  #page-5 > .sec-1 > p {
+    margin-top: 3vw;
+    padding: 0 3vw 0 0;
+    color: #b4bfc8;
+  }
+
+  .app-store,
+  .play-store {
+    display: inline;
+    width: 10vw;
+    object-fit: cover;
+  }
+
+  .play-store {
+    /* height: 5vw; */
+    margin-left: 2vw;
+    height: 4.4vw;
+  }
+
+  #page-6 {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 350%;
+    border-top: 2px solid #262c33;
+    margin-left: 5vw;
+    color: #b4bfc8;
+  }
+
+  #page-6 > h3 {
+    margin: 0.6vw;
+    transition: all 0.2s ease;
+  }
+
+  #page-6 > h3:hover {
+    color: #ff4458;
+    cursor: pointer;
+  }
+
+  #page-6 > h4 {
+    margin-left: 38vw;
+    margin-top: 0.6vw;
+  }
+}

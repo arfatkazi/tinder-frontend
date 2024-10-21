@@ -10,9 +10,9 @@ const Cards = () => {
           {tinderCardsData.map(({ name, description, id }) => {
             return (
               <>
-                <div className="cards-move" key={id}>
+                <div className="cards-move">
                   {/* card 1 */}
-                  <div id="card">
+                  <div id="card" key={id}>
                     <h4>{name}</h4>
                     <div id="underline"></div>
                     <p>{description}</p>
