@@ -30,7 +30,6 @@
 
 #page4 > .section-1 > h3:hover {
   color: #ff4458;
-
   cursor: pointer;
 }
 
@@ -49,7 +48,6 @@
   text-transform: capitalize;
   margin-bottom: 1vw;
   font-weight: bold;
-  margin-top: -20vw;
 }
 
 #page4 > .section-3 > .icons {
@@ -71,7 +69,6 @@
   text-transform: capitalize;
   margin-bottom: 1vw;
   font-weight: bold;
-  margin-top: -20vw;
 }
 
 #page4 > .section-4 > h3 {
@@ -121,7 +118,7 @@
 
   #page4 > .section-3 {
     margin-left: 10vw;
-    margin-top: -30vw;
+    margin-top: -40vw;
   }
   #page4 > .section-3 > h2 {
     font-size: 4.5vw;
@@ -138,7 +135,7 @@
   }
 
   #page4 > .section-4 {
-    margin-top: -30vw;
+    margin-top: -40vw;
     margin-left: 10vw;
   }
 
