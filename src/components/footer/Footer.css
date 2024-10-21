@@ -7,6 +7,7 @@
   top: 190%;
   color: #fff;
   border-top: 2px solid #262c33;
+  /* background-color: #111418; */
 }
 #page-5 > .sec-1 {
   margin-top: 3vw;
@@ -66,14 +67,8 @@
 
 @media screen and (max-width: 600px) {
   #page-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 250%;
-    color: #fff;
-    border-top: 2px solid #262c33;
+    top: 225%;
+    z-index: 998;
   }
   #page-5 > .sec-1 {
     margin-top: 3vw;
@@ -81,53 +76,53 @@
   }
 
   #page-5 > .sec-1 > h2 {
-    display: inline;
-    font-size: 1.4vw;
-    font-weight: 700;
-    margin-right: 3vw;
+    font-size: 5.5vw;
   }
 
   #page-5 > .sec-1 > p {
-    margin-top: 3vw;
-    padding: 0 3vw 0 0;
-    color: #b4bfc8;
+    font-size: 4vw;
+    margin-top: 2vw;
   }
 
   .app-store,
   .play-store {
     display: inline;
-    width: 10vw;
+    width: 25vw;
     object-fit: cover;
   }
 
   .play-store {
     /* height: 5vw; */
-    margin-left: 2vw;
-    height: 4.4vw;
+    margin-left: 4vw;
+    height: 10vw;
   }
 
   #page-6 {
     width: 100%;
     display: flex;
     position: absolute;
-    top: 350%;
+    top: 307%;
     border-top: 2px solid #262c33;
     margin-left: 5vw;
     color: #b4bfc8;
+    margin-bottom: 100vh;
+    z-index: 999;
   }
 
   #page-6 > h3 {
     margin: 0.6vw;
     transition: all 0.2s ease;
-  }
-
-  #page-6 > h3:hover {
-    color: #ff4458;
-    cursor: pointer;
+    text-wrap: nowrap;
+    font-size: 2.1vw;
+    margin-top: 1vw;
+    margin-right: 0;
   }
 
   #page-6 > h4 {
-    margin-left: 38vw;
-    margin-top: 0.6vw;
+    display: block;
+    text-wrap: nowrap;
+    font-size: 2vw;
+    margin-left: 5vw;
+    margin-top: 1vw;
   }
 }

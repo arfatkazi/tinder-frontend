@@ -120,7 +120,7 @@
   .cards-move {
     display: flex;
     gap: 12px;
-    animation: cardmove 2.5s ease 0s infinite forwards;
+    animation: cardmove 2.6s ease 0s infinite forwards;
   }
   #card {
     position: relative;
