@@ -99,11 +99,146 @@
 
 #page4 {
   position: absolute;
-  /* background: red; */
+  background-color: #111418;
   width: 100%;
   height: 100vh;
   top: 150%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 1vw;
+  color: #fff;
+}
+
+#page4 > .section-1 > h2 {
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+#page4 > .section-2 > h2 {
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+#page4 > .section-1 > h3 {
+  margin-top: 0.8vw;
+  transition: all 0.2s ease;
+}
+
+#page4 > .section-1 > h3:hover {
+  color: #ff4458;
+
+  cursor: pointer;
+}
+
+#page4 > .section-2 > h3 {
+  margin-top: 0.8vw;
+  transition: all 0.2s ease;
+}
+
+#page4 > .section-2 > h3:hover {
+  color: #ff4458;
+
+  cursor: pointer;
+}
+
+#page4 > .section-3 > h2 {
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+#page4 > .section-3 > .icons {
+  display: flex;
+  margin-top: 0.5vw;
+  font-size: 2vw;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.2s ease;
+}
+
+#page4 > .section-3 > .icons > .icon:hover {
+  color: #ff4458;
+  cursor: pointer;
+}
+
+#page4 > .section-4 > h2 {
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+#page4 > .section-4 > h3 {
+  margin-top: 0.8vw;
+  transition: all 0.2s ease;
+}
+
+#page4 > .section-4 > h3:hover {
+  color: #ff4458;
+  cursor: pointer;
+}
+
+#page-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 190%;
+  color: #fff;
+  border-top: 2px solid #262c33;
+}
+#page-5 > .sec-1 {
+  margin-top: 3vw;
+  margin-left: 6vw;
+}
+
+#page-5 > .sec-1 > h2 {
+  display: inline;
+  font-size: 1.4vw;
+  font-weight: 700;
+  margin-right: 3vw;
+}
+
+#page-5 > .sec-1 > p {
+  margin-top: 3vw;
+  padding: 0 3vw 0 0;
+  color: #b4bfc8;
+}
+
+.app-store,
+.play-store {
+  display: inline;
+  width: 10vw;
+  object-fit: cover;
+}
+
+.play-store {
+  /* height: 5vw; */
+  margin-left: 2vw;
+  height: 4.4vw;
+}
+
+#page-6 {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 240%;
+  border-top: 2px solid #262c33;
+  margin-left: 5vw;
+  color: #b4bfc8;
+}
+
+#page-6 > h3 {
+  margin: 0.6vw;
+}
+
+#page-6 > h4 {
+  margin-left: 38vw;
+  margin-top: 0.6vw;
 }

@@ -48,7 +48,7 @@
 
 .nav-list > li > a:hover {
   text-decoration: underline;
-  color: #fe1212;
+  color: #ff4458;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
 
 .dropdown > h5 > span:hover {
   cursor: pointer;
-  color: red; /* Change color on hover */
+  color: #ff4458; /* Change color on hover */
 }
 
 .safety-list > .dropdown {
