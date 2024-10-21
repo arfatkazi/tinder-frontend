@@ -51,6 +51,12 @@
 
 #page-6 > h3 {
   margin: 0.6vw;
+  transition: all 0.2s ease;
+}
+
+#page-6 > h3:hover {
+  color: #ff4458;
+  cursor: pointer;
 }
 
 #page-6 > h4 {
