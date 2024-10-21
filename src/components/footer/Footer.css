@@ -67,8 +67,7 @@
 
 @media screen and (max-width: 600px) {
   #page-5 {
-    top: 225%;
-    z-index: 998;
+    top: 220%;
   }
   #page-5 > .sec-1 {
     margin-top: 3vw;
@@ -101,12 +100,10 @@
     width: 100%;
     display: flex;
     position: absolute;
-    top: 307%;
+    top: 305%;
     border-top: 2px solid #262c33;
-    margin-left: 5vw;
+    margin-left: 2vw;
     color: #b4bfc8;
-    margin-bottom: 100vh;
-    z-index: 999;
   }
 
   #page-6 > h3 {

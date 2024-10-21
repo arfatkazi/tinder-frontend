@@ -6,7 +6,6 @@
   top: 150%;
   display: flex;
   justify-content: space-around;
-  padding-top: 1vw;
   color: #fff;
 }
 
@@ -42,7 +41,6 @@
 
 #page4 > .section-2 > h3:hover {
   color: #ff4458;
-
   cursor: pointer;
 }
 
@@ -51,6 +49,7 @@
   text-transform: capitalize;
   margin-bottom: 1vw;
   font-weight: bold;
+  margin-top: -20vw;
 }
 
 #page4 > .section-3 > .icons {
@@ -72,6 +71,7 @@
   text-transform: capitalize;
   margin-bottom: 1vw;
   font-weight: bold;
+  margin-top: -20vw;
 }
 
 #page4 > .section-4 > h3 {
