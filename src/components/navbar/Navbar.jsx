@@ -102,6 +102,7 @@ const Navbar = () => {
 
         <div className="right">
           <h2>language</h2>
+
           <button>Log in</button>
         </div>
         <HiOutlineMenuAlt3 className="burger-menu" />
