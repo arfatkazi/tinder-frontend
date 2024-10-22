@@ -1,0 +1,72 @@
+.modal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(120%, 30%);
+  background: #111418;
+  width: 450px;
+  text-align: center;
+  height: 30vw;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.modal-tinderimg {
+  position: absolute;
+  top: 7%;
+  width: 40px;
+  height: 40px;
+}
+
+.modal-container > h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.modal-container > h4 {
+  margin-top: 15px;
+  padding: 0 3.6vw;
+}
+
+.google-design {
+  background: #308aff;
+  padding: 0.5rem 6rem;
+  border-radius: 50px;
+  margin-top: 1.5vw;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.google-design:hover {
+  background: #4e96f4;
+}
+
+.modal-container > h3 {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.modal-container > h2 {
+  font-size: 1.4vw;
+  margin-top: 1vw;
+  font-weight: 600;
+}
+
+.modal-appimg,
+.modal-playimg {
+  width: 180px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: 1vw;
+}
+
+.modal-playimg {
+}
+
+.modal-container > .img-container {
+  display: flex;
+}
