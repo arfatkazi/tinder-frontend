@@ -1,9 +1,10 @@
 import "./Modal.css";
-
+import { RxCross2 } from "react-icons/rx";
 const Modal = () => {
   return (
     <>
       <div className="modal-container">
+        <RxCross2 className="modal-cross" />
         <img
           src="./tinder_icon.png"
           alt="tinder-img"
@@ -17,7 +18,10 @@ const Modal = () => {
         </h4>
 
         <div className="google-design">
-          <div className="icon">continue with google</div>
+          <div className="google-icon">
+            <img src="./google_icon.png" alt="" />
+            <h3>continue with google</h3>
+          </div>
         </div>
         <h3>more options</h3>
         <h2> Get the app!</h2>

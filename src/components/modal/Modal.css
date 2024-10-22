@@ -11,6 +11,7 @@
   height: 30vw;
   border-radius: 15px;
   color: #fff;
+  box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .modal-tinderimg {
@@ -23,17 +24,29 @@
 .modal-container > h1 {
   font-size: 34px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .modal-container > h4 {
   margin-top: 15px;
   padding: 0 3.6vw;
+  font-size: 1vw;
+}
+
+.modal-container > h4 > a {
+  color: #3689f6;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 0.1s ease;
+}
+
+.modal-container > h4 > a:hover {
+  text-decoration: none;
 }
 
 .google-design {
   background: #308aff;
-  padding: 0.5rem 6rem;
+  padding: 0.5rem 3.5rem;
   border-radius: 50px;
   margin-top: 1.5vw;
   cursor: pointer;
@@ -45,9 +58,29 @@
   background: #4e96f4;
 }
 
+.google-icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+.google-icon > img {
+  width: 35px;
+  height: auto;
+  background: #fff;
+  border-radius: 50px;
+}
+.google-icon > h3 {
+  font-weight: bold;
+  font-size: 1vw;
+  padding-top: 0.3vw;
+  padding-right: 4vw;
+}
+
 .modal-container > h3 {
   text-transform: capitalize;
   text-decoration: underline;
+  color: #cdcdcd;
+  cursor: pointer;
 }
 
 .modal-container > h2 {
@@ -56,17 +89,40 @@
   font-weight: 600;
 }
 
+.modal-container > .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-appimg,
 .modal-playimg {
   width: 180px;
-  height: 60px;
+  height: auto;
   object-fit: cover;
   margin-top: 1vw;
+  cursor: pointer;
+}
+
+.modal-appimg {
+  height: 3.9vw;
 }
 
 .modal-playimg {
+  width: 12vw;
+  height: 5.4vw;
+  margin-left: 0.5vw;
 }
 
-.modal-container > .img-container {
-  display: flex;
+.modal-cross {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  font-size: 2.2vw;
+  /* margin-top: 0.6vw; */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.modal-cross:hover {
+  color: #cdcdcd;
 }
