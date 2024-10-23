@@ -1,5 +1,11 @@
+import { useState } from "react";
 import "./Hero.css";
+import Modal from "../modal/Modal";
 const Hero = () => {
+  const [isOpenHero, setIsHero] = useState(false);
+  const openClickModel = () => {
+    setIsHero(!isOpenHero);
+  };
   return (
     <>
       <div className="herosection bg-blue-500 ">
@@ -10,9 +16,12 @@ const Hero = () => {
         />
 
         <h1 className="hero-title">Start something epic.</h1>
-        <button className="createbtn">Create account</button>
+        <button className="createbtn" onClick={openClickModel}>
+          Create account
+        </button>
         <button className="createbtn login">Log in</button>
       </div>
+      {isOpenHero && <Modal />}
     </>
   );
 };
