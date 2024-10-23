@@ -6,7 +6,11 @@ import Modal from "../modal/Modal";
 const Navbar = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
   const [isSafetyOpen, setIsSafetyOpen] = useState(false);
-  const [isOpenModel, setIsOpenModel] = useState(false);
+  const [openLogIn, setOpenLogIn] = useState(false);
+
+  const openClickHandler = () => {
+    setOpenLogIn(!openLogIn);
+  };
 
   const handleClickOutside = (event) => {
     if (!event.target.closest(".product-list") && isProductOpen) {
@@ -23,15 +27,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isProductOpen, isSafetyOpen]);
-
-  const openClickHandler = (e) => {
-    console.log(e.target);
-    setIsOpenModel(true);
-  };
-
-  const closeClickHandler = () => {
-    setIsOpenModel(false);
-  };
 
   return (
     <>
@@ -118,7 +113,7 @@ const Navbar = () => {
         </div>
         <HiOutlineMenuAlt3 className="burger-menu" />
       </div>
-      {isOpenModel && <Modal closeModel={closeClickHandler} />}
+      {openLogIn && <Modal></Modal>}
     </>
   );
 };
