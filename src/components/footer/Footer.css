@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   top: 190%;
   color: #fff;
   border-top: 2px solid #262c33;
@@ -67,10 +68,11 @@
 
 @media screen and (max-width: 600px) {
   #page-5 {
-    top: 220%;
+    top: 105%;
+    height: 95vh;
   }
   #page-5 > .sec-1 {
-    margin-top: 3vw;
+    margin-top: -15vw;
     margin-left: 6vw;
   }
 
@@ -100,7 +102,7 @@
     width: 100%;
     display: flex;
     position: absolute;
-    top: 305%;
+    top: 303%;
     border-top: 2px solid #262c33;
     margin-left: 2vw;
     color: #b4bfc8;
