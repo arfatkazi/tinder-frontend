@@ -112,10 +112,10 @@
   text-align: center;
   cursor: pointer;
   box-shadow: 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
 }
 
 .right > button:hover {
-  transition: all 0.3s ease-in-out;
   color: white;
   background: rgb(255, 44, 123);
   background: linear-gradient(

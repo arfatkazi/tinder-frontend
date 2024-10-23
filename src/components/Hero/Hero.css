@@ -48,6 +48,12 @@
 
 .login {
   display: none;
+  transition: all 0.2s ease;
+}
+
+.login:hover {
+  box-shadow: none;
+  background: #dddddd1b;
 }
 
 @media screen and (max-width: 600px) {
@@ -80,12 +86,6 @@
     margin-top: 40vw;
   }
 
-  .createbtn:hover {
-    filter: brightness(1.2);
-    box-shadow: 0 0 10px rgba(255, 144, 52, 0.7),
-      0 0 20px rgba(255, 44, 123, 0.5);
-  }
-
   .login {
     display: block;
     padding: 2.5vw 0vw;
@@ -97,5 +97,10 @@
     border: 2px solid #fff;
     width: 80%;
     margin-left: 0.1vw;
+  }
+
+  .login {
+    background: rgba(0, 0, 0, 0.151);
+    box-shadow: none;
   }
 }

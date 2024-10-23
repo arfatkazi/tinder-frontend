@@ -4,8 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 const Modal = () => {
   const [isClose, setIsClose] = useState(true);
 
-  const closeClickHandler = (e) => {
-    console.log(e.target);
+  const closeClickHandler = () => {
     setIsClose(false);
   };
 
