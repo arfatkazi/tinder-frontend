@@ -1,5 +1,5 @@
 .modal-container {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,6 @@
   border-radius: 15px;
   color: #fff;
   box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
-  margin-top: -50vw;
 }
 
 .modal-tinderimg {

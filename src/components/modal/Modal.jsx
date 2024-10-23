@@ -1,10 +1,25 @@
 import "./Modal.css";
 import { RxCross2 } from "react-icons/rx";
-const Modal = () => {
+const Modal = ({ closeModel }) => {
+  const outsideClickHandler = (e) => {
+    if (e.target.classList.contains("modal-container")) {
+      closeModel();
+    }
+  };
   return (
     <>
-      <div className="modal-container">
-        <RxCross2 className="modal-cross" />
+      <div
+        className="modal-container"
+        role="dialog"
+        aria-labelledby="model-title"
+        aria-describedby="model-description"
+        onClick={outsideClickHandler}
+      >
+        <RxCross2
+          className="modal-cross"
+          onClick={closeModel}
+          aria-label="Close"
+        />
         <img
           src="./tinder_icon.png"
           alt="tinder-img"
@@ -29,13 +44,13 @@ const Modal = () => {
           <img
             src="https://tinder.com/static/build/d256a5b510a685030be375c63a9010e9.webp"
             className="modal-appimg"
-            alt=""
+            alt="modalapp-img"
           />
 
           <img
             src="https://tinder.com/static/build/03aed264f8539c570e9bc80ba6b60d92.webp"
             className="modal-playimg"
-            alt=""
+            alt="modal-play-img"
           />
         </div>
       </div>
