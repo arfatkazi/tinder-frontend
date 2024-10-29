@@ -129,3 +129,185 @@
 .burger-menu {
   display: none;
 }
+
+@media (min-width: 475px) {
+  .navbar {
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2vh;
+  }
+
+  .tinder-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-top: 0.3vw;
+  }
+
+  .navbar > .left > h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: 5;
+    margin-top: 2vh;
+  }
+
+  .left {
+    display: flex;
+    width: 76%;
+    align-items: center;
+    margin-left: -2vw;
+  }
+
+  .tinder-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: 0.3vw;
+  }
+
+  .navbar > .left > h1 {
+    font-size: 2.7vw;
+    font-weight: 600;
+    margin-right: 1.5vw;
+  }
+
+  .nav-list {
+    position: relative;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 0.1vw;
+    margin-top: 0.5vw;
+    font-size: 1.4vw;
+    text-transform: capitalize;
+    font-weight: 500;
+    gap: 35px;
+  }
+
+  .nav-list > li > a {
+    transition: all 0.2s ease;
+    text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 1);
+  }
+
+  .nav-list > li > a:hover {
+    text-decoration: underline;
+    color: #ff4458;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown {
+    position: absolute !important;
+    top: 32px; /* Position it below the product-list */
+    left: 0; /* Align to the left of the product-list */
+    padding: 10px;
+    display: none; /* Hide by default */
+    flex-direction: column;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+
+  .dropdown h5 {
+    margin: 5px 0; /* Add some margin for spacing between items */
+  }
+
+  .dropdown > h5 > span:hover {
+    cursor: pointer;
+    color: #ff4458; /* Change color on hover */
+  }
+
+  .safety-list > .dropdown {
+    margin-left: 14vw;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .right > h2 {
+    text-transform: capitalize;
+    font-size: 1.3vw;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 0.2vw 1.5vw;
+  }
+
+  .right > h2:hover {
+    background: #ffffff3b;
+    border-radius: 20px;
+  }
+
+  .right > button {
+    position: relative;
+    font-size: 1.3vw;
+    font-weight: 700;
+    background-color: #ffff;
+    color: #000;
+    padding: 0.4vw 2.5vw;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .right > button:hover {
+    color: white;
+    background: rgb(255, 44, 123);
+    background: linear-gradient(
+      38deg,
+      rgba(255, 44, 123, 1) 53%,
+      rgba(255, 144, 52, 1) 86%
+    );
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
