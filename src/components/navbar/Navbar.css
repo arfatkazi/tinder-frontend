@@ -132,11 +132,11 @@
 
 @media screen and (max-width: 600px) {
   .navbar {
-    margin-bottom: 10vw;
+    background-color: orange;
   }
 
   .left {
-    margin-right: 16vw;
+    margin-right: 14vw;
   }
   .tinder-img {
     width: 50px;
@@ -144,8 +144,7 @@
   }
 
   .navbar > .left > h1 {
-    font-size: 8vw;
-    font-weight: 600;
+    font-size: 30px;
   }
 
   .nav-list {
@@ -158,8 +157,8 @@
 
   .burger-menu {
     display: block;
-    font-size: 7vw;
-    margin-right: 2.5vw;
+    font-size: 30px;
     color: #fff;
+    cursor: pointer;
   }
 }

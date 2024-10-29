@@ -8,7 +8,7 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="herosection bg-blue-500 ">
+      <div className="herosection ">
         <img
           src="./public/tinderHero.png"
           alt="tinderhero-img"
